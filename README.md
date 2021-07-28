@@ -40,28 +40,18 @@
 Ir em %user%/.ssh/id_rsa.pub, copiar o valor e colar em Github > Config > SSH and GPG Keys.
 
 - `git remote add origin git@github.com:reelopes/[repo do github]` - conecta repositório local ao remoto do github.
-
 - `git remote -v` - mostra onde esta conectado.
-
-- `git push -u origin master` - envia arquivos do repo para o github da branch master para a master do github (origin).
-
+- `git push origin master` - envia arquivos do repo para o github da branch master para a master do github (origin).
 - `git pull origin master` - baixa o repositório para a branch especificada.
-
 - `git clone git@github.com:reelopes/[repo do github].git [pasta  de destino]` - copio o repositório remoto para a pasta local especificada.
 
 Comando `cat` ou `more` lê arquivo.
 
-git checkout -b testing
-cria branch
-
-git checkout testing
-seleciona branch
-
-git branch -D testing
-deleta branch
-
-git merge [branch]
-faz o merge
+### Branches:
+- `git checkout -b [nome da branch]` - cria branch.
+- `git checkout [nome da branch]` - seleciona branch.
+- `git branch -D [nome da branch]` - deleta branch.
+- `git merge [nome da branch]`- faz o merge.
 
 git rebase [branch]
 integra a branch no master mas não faz um commit extra, ou seja, não é possível rastrear mais se veio de outra branch
