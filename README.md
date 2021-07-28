@@ -36,8 +36,9 @@ Controle de Arquivos:
 	- --mixed -  indica para o commit que quer se voltar, com os arquivos ja em estado modified
 	- --hard -  indica para o commit que quer se voltar sem arquivos adicionias
 
-Gerar SSH KEY
-ssh-keygen -t rsa -b 4096 -C "ree.lopes@hotmail.com"
+Gerar SSH KEY para subir arquivos no github
+- ssh-keygen -t rsa -b 4096 -C "[e-mail do github]"
+Ir em %user%/.ssh/id_rsa.pub, copiar o valor e colar em Github > Config > SSH and GPG Keys
 
 git remote add origin git@github.com:reelopes/github-course.git
 conecta no repo do github
