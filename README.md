@@ -1,19 +1,28 @@
 # github-course
-Comandos Úteis:
+COMANDO ÚTEIS
+Inicialização e Configuração:
 - git init - inicializa um repositório.
+- git config - configurações do repositório. 
+	- --global - define configurações para todos os usuários logados na máquina.
+		- user.name [Nome Desejado] - define o nome do usuário.
+		- user.email [Email Desejado] - define o e-mail do usuário.
+	- --get - recupera uma determinada configuração.
+	- --list - lista todas as configurações possíveis.
 
+Logs:
 - git log - Exibe o histórico de commits.
-
 - git shortlog - Exibe o histórico de commits com informações reduzidas (contribuidores e comentários de cada commit).
-  - Parâmetros:
-    - --s - resume os dados em quantitativos;
-    - aplicação de filtros - adicionar --[campo desejado] e valor desejado (e.g. --author "Pedro").
-
+	- --s - resume os dados em quantitativos;
+	- --[campo desejado] e valor desejado (e.g. --author "Pedro") - filtro de dados.
 - git --graph - mostra histórico visual de commits.
-
 - git show [hash do commit] - mostra os dados de um commit especifico.
 
-git add
+Controle de Arquivos:
+
+![image](https://user-images.githubusercontent.com/11855011/127254119-68dfab79-87fa-4be2-939d-918f920c531d.png)
+
+- git status - exibe status dos arquivos contidos no repositório.
+- git add [file ou . (para todos os arquivos)] - faz com que os arquivos apontados passem a ser gerenciados pelo git (status Untracked -> Unmodified).
 git rm
 
 git diff - mostra as diff.
