@@ -18,27 +18,25 @@ Logs:
 - git show [hash do commit] - mostra os dados de um commit especifico.
 
 Controle de Arquivos:
-
-![image](https://user-images.githubusercontent.com/11855011/127254119-68dfab79-87fa-4be2-939d-918f920c531d.png)
-
 - git status - exibe status dos arquivos contidos no repositório.
+![git status](https://user-images.githubusercontent.com/11855011/127254608-f9bb30b6-d0db-4d9c-904f-f6e6a1e4ded3.png)
+
 - git add [file ou . (para todos os arquivos)] - faz com que os arquivos apontados passem a ser gerenciados pelo git (status Untracked -> Unmodified).
-git rm
-
-git diff - mostra as diff.
+- git diff - mostra as diferenças entre arquivos da branch e locais.
 	--name-only - só nome dos arquivos modificados.
+- git commit - grava as modificações na branch.
+	- --m "[comentário]" - adiciona comentário ao commit.
+	- --a - comita diretamente os arquivos modificados tbm, sem precisar dar um git add novamente nesses arquivos.
+- git checkout - descarta as diff do arquivo antes dele estar staged.
+- git restore - retorna de staged ao estado modified.
+- git rm - retorna de staged ao estado unstaged.
+- git reset
+	- --HEAD [arquivo] - retorna ao arquivo original do repo, descartando o arquivo local.
+	- --soft [hash] - indica para o commit que quer se voltar, com os arquivos ja em estado staged
+	- --mixed -  indica para o commit que quer se voltar, com os arquivos ja em estado modified
+	- --hard -  indica para o commit que quer se voltar sem arquivos adicionias
 
-git checkout - descarta as diff do arquivo antes dele estar staged.
-
-git restore - retorna de staged ao estado modified.
-
-git reset
-	HEAD [arquivo] - retorna ao arquivo original do repo, descartando o local.
-	--soft [hash] - indica para o commit que quer se voltar, com os arquivos ja em estado staged
-	--mixed -  indica para o commit que quer se voltar, com os arquivos ja em estado modified
-	--hard -  indica para o commit que quer se voltar sem arquivos adicionias
-
-gerar ssh key
+Gerar SSH KEY
 ssh-keygen -t rsa -b 4096 -C "ree.lopes@hotmail.com"
 
 git remote add origin git@github.com:reelopes/github-course.git
