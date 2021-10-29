@@ -53,15 +53,15 @@ Comando `cat` ou `more` lê arquivo.
 - `git branch -D [nome da branch]` - deleta branch.
 - `git merge [nome da branch]`- faz o merge.
 
-git rebase [branch]
-integra a branch no master mas não faz um commit extra, ou seja, não é possível rastrear mais se veio de outra branch
+- `git rebase [branch]` - integra a branch no master mas não faz um commit extra, ou seja, não é possível rastrear mais se veio de outra branch
 
-git stash e git stash apply
-faz salvar os arquivos locais  escondendo os do commit e o apply os faz aparecer novamente.
-
-git stash list mostra arquivos que estão no stash
-
-git tag [nomeTag] - cria tag
-git push origin master --tags comita as tags
-git tag :[nome Tag] - apaga do repo remoto
+- `git stash` - faz salvar os arquivos locais escondendo-os do commit.
+- `git stash apply` (ou pop) <numStash> - faz a s alterações guardadas voltarem.
+- `git stash list` - mostra arquivos que estão no stash.
+- `git stash drop <numStash>` - exclui o stash indicado.
+- `git stash clear` - exclui todos os stashes.
+	
+- `git tag [nomeTag]` - cria tag.
+- `git push origin master --tags` - comita as tags.
+- `git tag :[nome Tag]` - apaga a tag do repo remoto.
 
